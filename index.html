@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>For Sahana — June 8th 🎀</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=aAC6SWnC05FfXmmSCzk5w-vwQ_AO6ga2Pg_Aui0uigKPcAoCEHrLBWqZLSyFRZsHnnqHL5wpnBr8ImvN82n4VhR3N1iikKrsHMe6gO0YdRUvz8GECFdwDJgIDn_9cVSjATG85hpatf0-KM-CZRTkmJEZHWYpw_U_jGZJVSnUAY94OaYbKLiBz8VNlZEU63o0nXmd4ROER34RSwBmQlIZBWech2kLDNVu9nELF_2W2xqjhcyBkNEhWQWvgub6K17NGH4t8icF4ryrIj8mGcUSUu_k6UyhlLoBR4fWUqh7LBCPiwU4nc91HjmT9K63ws3l" charset="UTF-8"></script><style>
 /* ═══════════════════════════════════════
    RESET & ROOT
 ═══════════════════════════════════════ */
@@ -290,7 +290,7 @@ html, body {
 .photo-ring img {
   position: absolute; inset: 0;
   width: 100%; height: 100%; object-fit: cover;
-  display: none;
+  display: block;
 }
 .photo-ring.loaded img { display: block; }
 .photo-ring.loaded .ph-cta { display: none; }
@@ -543,11 +543,11 @@ html, body {
   <!-- ── CARD 1: Photo ── -->
   <div class="card" id="c1">
     <p class="c1-label">look who it is 🌸</p>
-    <div class="photo-ring" id="pz" onclick="document.getElementById('fi').click();event.stopPropagation();">
+    <div class="photo-ring loaded" id="pz">
       <div class="ph-cta"><span>🌸</span>add her photo here</div>
       <img id="pimg" src="image/amulya.jpeg" alt="Sahana">
     </div>
-    <input type="file" id="fi" accept="image/*">
+    
     <p class="c1-quote">"She makes everything feel a little warmer,<br>just by being there." 🌸</p>
   </div>
 
